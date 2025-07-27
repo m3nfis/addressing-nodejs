@@ -1,0 +1,45 @@
+{
+  "name": "addressing-nodejs",
+  "version": "1.0.0",
+  "description": "A Node.js addressing library, powered by CLDR and Google's address data",
+  "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "example": "node --loader ts-node/esm examples/basic-usage.ts",
+    "start": "npm run build && node dist/examples/basic-usage.js"
+  },
+  "keywords": [
+    "postal",
+    "address",
+    "internationalization",
+    "localization",
+    "cldr",
+    "address-formatting"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "level": "^9.0.0"
+  }
+} 
