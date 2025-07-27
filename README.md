@@ -4,6 +4,22 @@
 
 A Node.js addressing library, powered by CLDR and Google's address data. This is a complete port of the [CommerceGuys addressing library](https://github.com/commerceguys/addressing) from PHP to Node.js.
 
+## About This Port
+
+This library is a **complete Node.js port** of the original [CommerceGuys addressing library](https://github.com/commerceguys/addressing) written in PHP. The original library provides:
+
+- Countries, with translations for over 150 locales. Powered by CLDR v47.
+- Address formats for over 200 countries
+- Subdivisions (administrative areas, localities, dependent localities) for 60 countries
+- Both latin and local subdivision names, when relevant (e.g: Okinawa / 沖縄県)
+- Formatting, in HTML or plain text
+- Validation
+- Zones
+
+Address formats and subdivisions were initially generated from Google's Address Data Service, and are now owned and maintained by the library.
+
+This Node.js port maintains the same API structure and functionality while adapting it to modern JavaScript/TypeScript patterns and Node.js ecosystem best practices.
+
 ## Features
 
 - **Countries**: 150+ locales, powered by CLDR v47
